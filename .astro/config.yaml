@@ -1,0 +1,6 @@
+project:
+  name: astro-cnil
+webserver:
+  port: 8083
+postgres:
+  port: 5439 

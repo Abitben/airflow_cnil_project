@@ -1,0 +1,1175 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: ""
+    schema: raw_data
+    tables:
+      - name: formalites_prealables_recues_par_la_cnil_depuis_le_25_mai_2018
+        description: ""
+        columns:
+          - name: organisme_raison_sociale
+            data_type: string
+            description: ""
+          - name: organisme_nom_du_service
+            data_type: string
+            description: ""
+          - name: organisme_adresse
+            data_type: string
+            description: ""
+          - name: organisme_code_postal
+            data_type: string
+            description: ""
+          - name: organisme_ville
+            data_type: string
+            description: ""
+          - name: organisme_siren
+            data_type: string
+            description: ""
+          - name: service_charge_du_droit_dacces
+            data_type: string
+            description: ""
+          - name: date_denregistrement
+            data_type: string
+            description: ""
+          - name: finalite_du_traitement
+            data_type: string
+            description: ""
+          - name: categories_et_destinataires_des_donnees
+            data_type: string
+            description: ""
+          - name: numero_denregistrement
+            data_type: string
+            description: ""
+          - name: type_de_formalite_prealable
+            data_type: string
+            description: ""
+      - name: gdpr_eu_sanctions
+        description: ""
+        columns:
+          - name: etid
+            data_type: string
+            description: ""
+          - name: country
+            data_type: string
+            description: ""
+          - name: authority
+            data_type: string
+            description: ""
+          - name: date_of_decision
+            data_type: string
+            description: ""
+          - name: fine
+            data_type: string
+            description: ""
+          - name: controller_processor
+            data_type: string
+            description: ""
+          - name: sector
+            data_type: string
+            description: ""
+          - name: quoted_art
+            data_type: string
+            description: ""
+          - name: type
+            data_type: string
+            description: ""
+          - name: summary
+            data_type: string
+            description: ""
+          - name: source
+            data_type: string
+            description: ""
+      - name: gdpr_fr_sanctions
+        description: ""
+        columns:
+          - name: date
+            data_type: string
+            description: ""
+          - name: organisme_type
+            data_type: string
+            description: ""
+          - name: manquements
+            data_type: string
+            description: ""
+          - name: decision
+            data_type: string
+            description: ""
+          - name: theme
+            data_type: string
+            description: ""
+          - name: link
+            data_type: string
+            description: ""
+      - name: liste_des_controles_realises_par_la_cnil_en_2014
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: type_de_controle
+            data_type: string
+            description: ""
+          - name: nom_de_lorganisme_controle_ou_nom_de_domaine
+            data_type: string
+            description: ""
+          - name: lieu_de_controle
+            data_type: string
+            description: ""
+          - name: departement
+            data_type: string
+            description: ""
+          - name: secteur_dactivite
+            data_type: string
+            description: ""
+      - name: liste_des_controles_realises_par_la_cnil_en_2015
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: type_de_controle
+            data_type: string
+            description: ""
+          - name: organismes
+            data_type: string
+            description: ""
+          - name: lieu_de_controle
+            data_type: string
+            description: ""
+          - name: departement
+            data_type: int64
+            description: ""
+          - name: secteur_dactivite__de_lorganisme
+            data_type: string
+            description: ""
+      - name: liste_des_controles_realises_par_la_cnil_en_2016
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: type_de_controle
+            data_type: string
+            description: ""
+          - name: organismes
+            data_type: string
+            description: ""
+          - name: lieu_de_controle
+            data_type: string
+            description: ""
+          - name: departement
+            data_type: int64
+            description: ""
+          - name: secteur_dactivite_de_lorganisme
+            data_type: string
+            description: ""
+      - name: liste_des_controles_realises_par_la_cnil_en_2017
+        description: ""
+        columns:
+          - name: type_de_controle
+            data_type: string
+            description: ""
+          - name: modalite_de_controle
+            data_type: string
+            description: ""
+          - name: organismes
+            data_type: string
+            description: ""
+          - name: departement
+            data_type: float64
+            description: ""
+          - name: lieu
+            data_type: string
+            description: ""
+          - name: secteur_dactivite
+            data_type: string
+            description: ""
+      - name: open_cnil_ventilation_sanctions_depuis_2014_vd_csv
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: sanctions_pecuniaires_non_publiques
+            data_type: int64
+            description: ""
+          - name: sanctions_pecuniaires_publiques
+            data_type: int64
+            description: ""
+          - name: avertissements_non_publics
+            data_type: int64
+            description: ""
+          - name: avertissements_publics
+            data_type: int64
+            description: ""
+          - name: relaxesnonlieu
+            data_type: int64
+            description: ""
+          - name: total
+            data_type: int64
+            description: ""
+      - name: open_cnil_ventilation_sanctions_depuis_2014_vd_xlsx
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: sanctions_pecuniaires_non_publiques
+            data_type: int64
+            description: ""
+          - name: sanctions_pecuniaires_publiques
+            data_type: int64
+            description: ""
+          - name: avertissements_non_publics
+            data_type: int64
+            description: ""
+          - name: avertissements_publics
+            data_type: int64
+            description: ""
+          - name: relaxesnonlieu
+            data_type: int64
+            description: ""
+          - name: total
+            data_type: int64
+            description: ""
+      - name: open_cnil_volumes_med_depuis_2014_maj_aout_2023_csv
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: mises_en_demeure_publiques
+            data_type: int64
+            description: ""
+          - name: mises_en_demeure_non_publiques
+            data_type: int64
+            description: ""
+          - name: total
+            data_type: int64
+            description: ""
+      - name: open_cnil_volumes_med_depuis_2014_maj_aout_2023_xlsx
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: mises_en_demeure_publiques
+            data_type: int64
+            description: ""
+          - name: mises_en_demeure_non_publiques
+            data_type: int64
+            description: ""
+          - name: total
+            data_type: int64
+            description: ""
+      - name: open_data_controles_2020_vd_20210603_csv
+        description: ""
+        columns:
+          - name: categorie_de_controle
+            data_type: string
+            description: ""
+          - name: modalite_de_controle
+            data_type: string
+            description: ""
+          - name: organismes
+            data_type: string
+            description: ""
+          - name: dept
+            data_type: float64
+            description: ""
+          - name: ville
+            data_type: string
+            description: ""
+          - name: activite_de_lorganisme
+            data_type: string
+            description: ""
+      - name: open_data_controles_2020_vd_20210603_xlsx
+        description: ""
+        columns:
+          - name: categorie_de_controle
+            data_type: string
+            description: ""
+          - name: modalite_de_controle
+            data_type: string
+            description: ""
+          - name: organismes
+            data_type: string
+            description: ""
+          - name: dept
+            data_type: float64
+            description: ""
+          - name: ville
+            data_type: string
+            description: ""
+          - name: activite_de_lorganisme
+            data_type: string
+            description: ""
+      - name: open_data_controles_2021_v20220921_csv
+        description: ""
+        columns:
+          - name: categorie_de_controle
+            data_type: string
+            description: ""
+          - name: modalite_de_controle
+            data_type: string
+            description: ""
+          - name: organismes_controles
+            data_type: string
+            description: ""
+          - name: dept
+            data_type: float64
+            description: ""
+          - name: ville
+            data_type: string
+            description: ""
+          - name: pays
+            data_type: string
+            description: ""
+          - name: activite_de_lorganisme
+            data_type: string
+            description: ""
+      - name: open_data_controles_2021_v20220921_xlsx
+        description: ""
+        columns:
+          - name: categorie_de_controle
+            data_type: string
+            description: ""
+          - name: modalite_de_controle
+            data_type: string
+            description: ""
+          - name: organismes_controles
+            data_type: string
+            description: ""
+          - name: dept
+            data_type: float64
+            description: ""
+          - name: ville
+            data_type: string
+            description: ""
+          - name: pays
+            data_type: string
+            description: ""
+          - name: activite_de_lorganisme
+            data_type: string
+            description: ""
+      - name: open_data_controles_cnil_2022_v20231003_csv
+        description: ""
+        columns:
+          - name: categorie__de_controle
+            data_type: string
+            description: ""
+          - name: organismes_controles
+            data_type: string
+            description: ""
+          - name: modalites_de_controle
+            data_type: string
+            description: ""
+          - name: dept
+            data_type: float64
+            description: ""
+          - name: ville
+            data_type: string
+            description: ""
+          - name: pays
+            data_type: string
+            description: ""
+          - name: activite__de_lorganisme
+            data_type: string
+            description: ""
+      - name: open_data_controles_cnil_2022_v20231003_xlsx
+        description: ""
+        columns:
+          - name: categorie__de_controle
+            data_type: string
+            description: ""
+          - name: organismes_controles
+            data_type: string
+            description: ""
+          - name: modalites_de_controle
+            data_type: string
+            description: ""
+          - name: dept
+            data_type: float64
+            description: ""
+          - name: ville
+            data_type: string
+            description: ""
+          - name: pays
+            data_type: string
+            description: ""
+          - name: activite__de_lorganisme
+            data_type: string
+            description: ""
+      - name: opencnil_autorites_de_protection_vd_20231010_csv
+        description: ""
+        columns:
+          - name: zone
+            data_type: string
+            description: ""
+          - name: code_pays_iso
+            data_type: string
+            description: ""
+          - name: nom_du_pays
+            data_type: string
+            description: ""
+          - name: niveau_de_protection
+            data_type: string
+            description: ""
+          - name: membre_de_ledpb_
+            data_type: string
+            description: ""
+          - name: membre_de_lafapdp_
+            data_type: string
+            description: ""
+          - name: site_internet_de_lautorite_independante
+            data_type: string
+            description: ""
+          - name: adresse_postale
+            data_type: string
+            description: ""
+          - name: adresse_corrigee_pour_les_coordonnees_gps_longitude__latitude
+            data_type: string
+            description: ""
+          - name: latitude
+            data_type: float64
+            description: ""
+          - name: longitude
+            data_type: float64
+            description: ""
+      - name: opencnil_autorites_de_protection_vd_20231010_xlsx
+        description: ""
+        columns:
+          - name: zone
+            data_type: string
+            description: ""
+          - name: code_pays_iso
+            data_type: string
+            description: ""
+          - name: nom_du_pays
+            data_type: string
+            description: ""
+          - name: niveau_de_protection
+            data_type: string
+            description: ""
+          - name: membre_de_ledpb_
+            data_type: string
+            description: ""
+          - name: membre_de_lafapdp_
+            data_type: string
+            description: ""
+          - name: site_internet_de_lautorite_independante
+            data_type: string
+            description: ""
+          - name: adresse_postale
+            data_type: string
+            description: ""
+          - name: adresse_corrigee_pour_les_coordonnees_gps_longitude__latitude
+            data_type: string
+            description: ""
+          - name: latitude
+            data_type: float64
+            description: ""
+          - name: longitude
+            data_type: float64
+            description: ""
+      - name: opencnil_budget_depuis_2000_maj_mars_2024_csv
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: budget_total
+            data_type: string
+            description: ""
+          - name: dont_personnel_titre_2
+            data_type: string
+            description: ""
+          - name: dont_fonctionnement
+            data_type: string
+            description: ""
+      - name: opencnil_budget_depuis_2000_maj_mars_2024_xlsx
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: budget_total
+            data_type: float64
+            description: ""
+          - name: dont_personnel_titre_2
+            data_type: float64
+            description: ""
+          - name: dont_fonctionnement
+            data_type: float64
+            description: ""
+      - name: opencnil_dai_stic_judex_taj_maj_janvier_2019_xlsx
+        description: ""
+      - name: opencnil_dai_stic_judex_taj_maj_janvier_2019_csv
+        description: ""
+      - name: opencnil_effectifs_depuis_1980_maj_juin_2023_csv
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: postes_budgetaires
+            data_type: float64
+            description: ""
+          - name: etpt
+            data_type: float64
+            description: ""
+      - name: opencnil_effectifs_depuis_1980_maj_juin_2023_xlsx
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: postes_budgetaires
+            data_type: float64
+            description: ""
+          - name: etpt
+            data_type: float64
+            description: ""
+      - name: opencnil_liste_controles_2018_csv
+        description: ""
+        columns:
+          - name: type_de_controle
+            data_type: string
+            description: ""
+          - name: modalite_de_controle
+            data_type: string
+            description: ""
+          - name: organismes
+            data_type: string
+            description: ""
+          - name: dep
+            data_type: float64
+            description: ""
+          - name: lieu
+            data_type: string
+            description: ""
+          - name: secteur_dactivite
+            data_type: string
+            description: ""
+      - name: opencnil_liste_controles_2018_xlsx
+        description: ""
+        columns:
+          - name: type_de_controle
+            data_type: string
+            description: ""
+          - name: modalite_de_controle
+            data_type: string
+            description: ""
+          - name: organismes
+            data_type: string
+            description: ""
+          - name: dep
+            data_type: float64
+            description: ""
+          - name: lieu
+            data_type: string
+            description: ""
+          - name: secteur_dactivite
+            data_type: string
+            description: ""
+      - name: opencnil_liste_controles_2019_csv
+        description: ""
+        columns:
+          - name: type_de_controle
+            data_type: string
+            description: ""
+          - name: modalite_de_controle
+            data_type: string
+            description: ""
+          - name: organismes
+            data_type: string
+            description: ""
+          - name: dep
+            data_type: float64
+            description: ""
+          - name: lieu
+            data_type: string
+            description: ""
+          - name: secteur_dactivite
+            data_type: string
+            description: ""
+      - name: opencnil_liste_controles_2019_xlsx
+        description: ""
+        columns:
+          - name: type_de_controle
+            data_type: string
+            description: ""
+          - name: modalite_de_controle
+            data_type: string
+            description: ""
+          - name: organismes
+            data_type: string
+            description: ""
+          - name: dep
+            data_type: float64
+            description: ""
+          - name: lieu
+            data_type: string
+            description: ""
+          - name: secteur_dactivite
+            data_type: string
+            description: ""
+      - name: opencnil_marches_publics_2014_2020_xlsx
+        description: ""
+        columns:
+          - name: nature_du_marche
+            data_type: string
+            description: ""
+          - name: tranche_de_montant_minimum_ht
+            data_type: int64
+            description: ""
+          - name: tranche_de_montant_maximum_ht
+            data_type: float64
+            description: ""
+          - name: objet_du_marche
+            data_type: string
+            description: ""
+          - name: date_de_notification
+            data_type: string
+            description: ""
+          - name: nom_de_lattributaire
+            data_type: string
+            description: ""
+          - name: code_postal_de_lattributaire
+            data_type: int64
+            description: ""
+          - name: montant_du_marche_forfait_annuel_ht
+            data_type: float64
+            description: ""
+          - name: montant_minimum_du_marche__montant_minimum_pour_la_partie_unitaire_ht
+            data_type: float64
+            description: ""
+          - name: montant_maximum_du_marche__montant_maximum_pour_la_partie_unitaire_ht
+            data_type: float64
+            description: ""
+      - name: opencnil_nombre_controles_depuis_1990_maj_juin_2023_csv
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: controles_realises
+            data_type: float64
+            description: ""
+          - name: dont_controles_videoprotection
+            data_type: float64
+            description: ""
+          - name: dont_controles_en_ligne
+            data_type: float64
+            description: ""
+          - name: dont_autres_controles_loi_iandl_rgpd
+            data_type: float64
+            description: ""
+      - name: opencnil_nombre_controles_depuis_1990_maj_juin_2023_xlsx
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: controles_realises
+            data_type: float64
+            description: ""
+          - name: dont_controles_videoprotection
+            data_type: float64
+            description: ""
+          - name: dont_controles_en_ligne
+            data_type: float64
+            description: ""
+          - name: dont_autres_controles_loi_iandl_rgpd
+            data_type: float64
+            description: ""
+      - name: opencnil_organismes_avec_dpo_xlsx
+        description: ""
+        columns:
+          - name: siren_organisme_designant
+            data_type: string
+            description: ""
+          - name: nom_organisme_designant
+            data_type: string
+            description: ""
+          - name: secteur_activite_organisme_designant
+            data_type: string
+            description: ""
+          - name: code_naf_organisme_designant
+            data_type: string
+            description: ""
+          - name: adresse_postale_organisme_designant
+            data_type: string
+            description: ""
+          - name: code_postal_organisme_designant
+            data_type: string
+            description: ""
+          - name: ville_organisme_designant
+            data_type: string
+            description: ""
+          - name: pays_organisme_designant
+            data_type: string
+            description: ""
+          - name: type_de_dpo
+            data_type: string
+            description: ""
+          - name: date_de_la_designation
+            data_type: string
+            description: ""
+          - name: siren_organisme_designe
+            data_type: string
+            description: ""
+          - name: nom_organisme_designe
+            data_type: string
+            description: ""
+          - name: secteur_activite_organisme_designe
+            data_type: string
+            description: ""
+          - name: code_naf_organisme_designe
+            data_type: string
+            description: ""
+          - name: adresse_postale_organisme_designe
+            data_type: string
+            description: ""
+          - name: code_postal_organisme_designe
+            data_type: string
+            description: ""
+          - name: ville_organisme_designe
+            data_type: string
+            description: ""
+          - name: pays_organisme_designe
+            data_type: string
+            description: ""
+          - name: moyen_contact_dpo_email
+            data_type: string
+            description: ""
+          - name: moyen_contact_dpo_url
+            data_type: string
+            description: ""
+          - name: moyen_contact_dpo_telephone
+            data_type: string
+            description: ""
+          - name: moyen_contact_dpo_adresse_postale
+            data_type: string
+            description: ""
+          - name: moyen_contact_dpo_code_postal
+            data_type: string
+            description: ""
+          - name: moyen_contact_dpo_ville
+            data_type: string
+            description: ""
+          - name: moyen_contact_dpo_pays
+            data_type: string
+            description: ""
+          - name: moyen_contact_dpo_autre
+            data_type: string
+            description: ""
+      - name: opencnil_sanctions_depuis_2019_maj_nov_2023_csv
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: amende_administrative_non_publique
+            data_type: float64
+            description: ""
+          - name: avec_injonction
+            data_type: float64
+            description: ""
+          - name: sans_injonction
+            data_type: float64
+            description: ""
+          - name: amende_administrative_publique
+            data_type: float64
+            description: ""
+          - name: avec_injonction_2
+            data_type: float64
+            description: ""
+          - name: sans_injonction_2
+            data_type: float64
+            description: ""
+          - name: injonction_seule_non_publique
+            data_type: float64
+            description: ""
+          - name: injonction_seule_publique
+            data_type: float64
+            description: ""
+          - name: rappel_a_lordre_non_public
+            data_type: float64
+            description: ""
+          - name: rappel_a_lordre_public
+            data_type: float64
+            description: ""
+          - name: autres_mesures_non_publiques_prevues_par_larticle_20_lil
+            data_type: float64
+            description: ""
+          - name: autres_mesures_publiques_prevues_par_larticle_20_lil
+            data_type: float64
+            description: ""
+          - name: relaxesnonlieu
+            data_type: float64
+            description: ""
+          - name: total
+            data_type: float64
+            description: ""
+          - name: amende_administrative_non_publique_dans_le_cadre_de_la_procedure_simplifiee
+            data_type: float64
+            description: ""
+          - name: avec_injonction_3
+            data_type: float64
+            description: ""
+          - name: sans_injonction_3
+            data_type: float64
+            description: ""
+          - name: total_2
+            data_type: float64
+            description: ""
+      - name: opencnil_sanctions_depuis_2019_maj_nov_2023_xlsx
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: amende_administrative_non_publique
+            data_type: int64
+            description: ""
+          - name: avec_injonction
+            data_type: int64
+            description: ""
+          - name: sans_injonction
+            data_type: int64
+            description: ""
+          - name: amende_administrative_publique
+            data_type: int64
+            description: ""
+          - name: avec_injonction_2
+            data_type: int64
+            description: ""
+          - name: sans_injonction_2
+            data_type: int64
+            description: ""
+          - name: injonction_seule_non_publique
+            data_type: int64
+            description: ""
+          - name: injonction_seule_publique
+            data_type: int64
+            description: ""
+          - name: rappel_a_lordre_non_public
+            data_type: int64
+            description: ""
+          - name: rappel_a_lordre_public
+            data_type: int64
+            description: ""
+          - name: autres_mesures_non_publiques_prevues_par_larticle_20_lil
+            data_type: int64
+            description: ""
+          - name: autres_mesures_publiques_prevues_par_larticle_20_lil
+            data_type: int64
+            description: ""
+          - name: relaxesnonlieu
+            data_type: int64
+            description: ""
+          - name: total
+            data_type: int64
+            description: ""
+          - name: amende_administrative_non_publique_dans_le_cadre_de_la_procedure_simplifiee
+            data_type: int64
+            description: ""
+          - name: avec_injonction_3
+            data_type: int64
+            description: ""
+          - name: sans_injonction_3
+            data_type: int64
+            description: ""
+          - name: total_2
+            data_type: int64
+            description: ""
+      - name: opencnil_violationsdcpnotifiees_20231231_csv
+        description: ""
+        columns:
+          - name: date_de_reception_de_la_notification
+            data_type: string
+            description: ""
+          - name: secteur_dactivite_de_lorganisme_concerne
+            data_type: string
+            description: ""
+          - name: natures_de_la_violation
+            data_type: string
+            description: ""
+          - name: nombre_de_personnes_impactees
+            data_type: string
+            description: ""
+          - name: typologie_des_donnees_impactees
+            data_type: string
+            description: ""
+          - name: donnees_sensibles
+            data_type: string
+            description: ""
+          - name: origines_de_lincident
+            data_type: string
+            description: ""
+          - name: causes_de_lincident
+            data_type: string
+            description: ""
+          - name: information_des_personnes
+            data_type: string
+            description: ""
+      - name: opencnil_violationsdcpnotifiees_20231231_xlsx
+        description: ""
+        columns:
+          - name: date_de_reception_de_la_notification
+            data_type: string
+            description: ""
+          - name: secteur_dactivite_de_lorganisme_concerne
+            data_type: string
+            description: ""
+          - name: natures_de_la_violation
+            data_type: string
+            description: ""
+          - name: nombre_de_personnes_impactees
+            data_type: string
+            description: ""
+          - name: typologie_des_donnees_impactees
+            data_type: string
+            description: ""
+          - name: donnees_sensibles
+            data_type: string
+            description: ""
+          - name: origines_de_lincident
+            data_type: string
+            description: ""
+          - name: causes_de_lincident
+            data_type: string
+            description: ""
+          - name: information_des_personnes
+            data_type: string
+            description: ""
+      - name: opencnil_volumes_dai_edi_depuis_1984_maj_juin_2023_csv
+        description: ""
+        columns:
+          - name: annee
+            data_type: string
+            description: ""
+          - name: nombre_de_dossiers_recus_dans_lannee
+            data_type: float64
+            description: ""
+          - name: nombre_de_verifications_de_fichiers
+            data_type: float64
+            description: ""
+      - name: opencnil_volumes_dai_edi_depuis_1984_maj_juin_2023_xlsx
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: nombre_de_dossiers_recus_dans_lannee
+            data_type: int64
+            description: ""
+          - name: nombre_de_verifications_de_fichiers_realisees_dans_lannee
+            data_type: int64
+            description: ""
+      - name: opencnil_volumes_plaintes_depuis_1981_maj_juin_2023_csv
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: nombre_de_plaintes_recues
+            data_type: int64
+            description: ""
+      - name: opencnil_volumes_plaintes_depuis_1981_maj_juin_2023_xlsx
+        description: ""
+        columns:
+          - name: annee
+            data_type: int64
+            description: ""
+          - name: nombre_de_plaintes_recues
+            data_type: int64
+            description: ""
+      - name: organismes_avec_cil_csv
+        description: ""
+        columns:
+          - name: siren
+            data_type: float64
+            description: ""
+          - name: responsable
+            data_type: string
+            description: ""
+          - name: adresse
+            data_type: string
+            description: ""
+          - name: code_postal
+            data_type: string
+            description: ""
+          - name: ville
+            data_type: string
+            description: ""
+          - name: naf
+            data_type: string
+            description: ""
+          - name: typecil
+            data_type: string
+            description: ""
+          - name: portee
+            data_type: string
+            description: ""
+      - name: organismes_avec_cil_xlsx
+        description: ""
+        columns:
+          - name: siren
+            data_type: float64
+            description: ""
+          - name: responsable
+            data_type: string
+            description: ""
+          - name: adresse
+            data_type: string
+            description: ""
+          - name: code_postal
+            data_type: string
+            description: ""
+          - name: ville
+            data_type: string
+            description: ""
+          - name: code_naf
+            data_type: string
+            description: ""
+          - name: type_de_cil
+            data_type: string
+            description: ""
+          - name: portee
+            data_type: string
+            description: ""
+
+  - name: to_complete_sets
+    description: ""
+    schema: to_complete_sets
+    tables:
+      - name: amount_by_date
+        description: ""
+        columns:
+          - name: date_date
+            data_type: date
+            description: ""
+          - name: amount
+            data_type: int64
+            description: ""
+
+      - name: amounts_by_link
+        description: ""
+        columns:
+          - name: date
+            data_type: date
+            description: ""
+          - name: nom_ou_type_d_organisme
+            data_type: string
+            description: ""
+          - name: amount
+            data_type: int64
+            description: ""
+
+      - name: amounts_sanctions
+        description: ""
+        columns:
+          - name: decision
+            data_type: string
+            description: ""
+          - name: amount
+            data_type: int64
+            description: ""
+
+      - name: manquements_gdpr
+        description: ""
+        columns:
+          - name: string_field_0
+            data_type: string
+            description: ""
+          - name: string_field_1
+            data_type: string
+            description: ""
+          - name: string_field_2
+            data_type: string
+            description: ""
+          - name: string_field_3
+            data_type: string
+            description: ""
+          - name: string_field_4
+            data_type: string
+            description: ""
+
+      - name: organismes_secteur
+        description: ""
+        columns:
+          - name: string_field_0
+            data_type: string
+            description: ""
+          - name: string_field_1
+            data_type: string
+            description: ""
+      - name: controles_org_grouped
+        description: ""
+        columns:
+          - name: organismes
+            data_type: string
+            description: ""
+          - name: grouped_company
+            data_type: string
+            description: ""
+          - name: score
+            description: ""
+      - name: gdpr_list_art_eng
+        description: ""
+        columns:
+          - name: string_field_0
+            data_type: string
+            description: ""
+          - name: string_field_1
+            data_type: string
+            description: ""
+      - name: med_2023_manual
+        description: ""
+        columns:
+          - name: annee
+            data_type: integer
+            description: ""
+          - name: mises_en_demeure_publiques 
+            data_type: integer
+            description: ""
+          - name: mises_en_demeure_non_publiques
+            data_type: integer
+            description: ""
+          - name: total
+            data_type: integer
+            description: ""
+      - name: plaintes_2023
+        description: ""
+        columns:
+          - name: annee
+            data_type: integer
+            description: ""
+          - name: nombre_de_plaintes_recues 
+            data_type: integer
+            description: ""
+      - name: controles_2023_manual
+        description: ""
+        columns:
+          - name: annee
+            data_type: integer
+            description: ""
+          - name: controles_realises
+            data_type: integer
+            description: ""
+          - name: dont_controles_videoprotection
+            data_type: integer
+            description: ""
+          - name: dont_controles_en_ligne
+            data_type: integer
+            description: ""
+          - name: dont_autres_controles_loi_iandl_rgpd
+            data_type: integer
+            description: ""
+            
+
+        
+    

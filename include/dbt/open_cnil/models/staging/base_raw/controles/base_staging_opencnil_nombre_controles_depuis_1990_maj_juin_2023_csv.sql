@@ -1,0 +1,15 @@
+with source as (
+      select * from {{ source('raw_data', 'opencnil_nombre_controles_depuis_1990_maj_juin_2023_csv') }}
+),
+renamed as (
+    select
+        DATE({{ adapter.quote("annee") }}, 01, 01) as annee,
+        {{ adapter.quote("controles_realises") }},
+        {{ adapter.quote("dont_controles_videoprotection") }},
+        {{ adapter.quote("dont_controles_en_ligne") }},
+        {{ adapter.quote("dont_autres_controles_loi_iandl_rgpd") }}
+
+    from source
+)
+select * from renamed
+  
