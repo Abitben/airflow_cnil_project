@@ -14,6 +14,6 @@ SELECT
   SPLIT(causes_de_lincident, ",") AS causes_de_lincident,
   information_des_personnes
 FROM 
-  {{ ref('base_staging_opencnil_violationsdcpnotifiees_20231231_csv') }}
+  {{ ref('base_raw_data_opencnil_violationsdcpnotifiees_20240331_csv') }}
 WHERE 
   date_de_reception_de_la_notification NOT LIKE '%Date de réception de la notification%'

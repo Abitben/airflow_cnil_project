@@ -915,6 +915,36 @@ sources:
           - name: information_des_personnes
             data_type: string
             description: ""
+      - name: opencnil_violationsdcpnotifiees_20240331_csv
+        description: ""
+        columns:
+          - name: date_de_reception_de_la_notification
+            data_type: string
+            description: ""
+          - name: secteur_dactivite_de_lorganisme_concerne
+            data_type: string
+            description: ""
+          - name: natures_de_la_violation
+            data_type: string
+            description: ""
+          - name: nombre_de_personnes_impactees
+            data_type: string
+            description: ""
+          - name: typologie_des_donnees_impactees
+            data_type: string
+            description: ""
+          - name: donnees_sensibles
+            data_type: string
+            description: ""
+          - name: origines_de_lincident
+            data_type: string
+            description: ""
+          - name: causes_de_lincident
+            data_type: string
+            description: ""
+          - name: information_des_personnes
+            data_type: string
+            description: ""
       - name: opencnil_violationsdcpnotifiees_20231231_xlsx
         description: ""
         columns:
